@@ -29,3 +29,4 @@ go run . <command> [args...]
 * `register <name>`: registers a user in the database and logs in
 * `login <name>`: logs in with an existing user
 * `reset`: deletes all data from the database
+* `users`: lists all users
