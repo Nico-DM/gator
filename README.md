@@ -15,7 +15,7 @@ pg_ctl -D ~/postgres-data -l ~/postgres.log start
 ## Connect to database
 
 ```bash
-psql
+psql "postgres://nico:@localhost:5432/gator"
 ```
 
 ## Usage
