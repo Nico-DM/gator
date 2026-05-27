@@ -30,3 +30,4 @@ go run . <command> [args...]
 * `login <name>`: logs in with an existing user
 * `reset`: deletes all data from the database
 * `users`: lists all users
+* `agg`: fetches an example RSS feed
