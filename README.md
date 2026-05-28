@@ -12,6 +12,20 @@ toolbox enter
 pg_ctl -D ~/postgres-data -l ~/postgres.log start
 ```
 
+## Run migrations
+
+### Up
+
+```bash
+cd sql/schema && goose postgres "postgres://nico:@localhost:5432/gator" up && cd ../..
+```
+
+### Down
+
+```bash
+cd sql/schema && goose postgres "postgres://nico:@localhost:5432/gator" down && cd ../..
+```
+
 ## Connect to database
 
 ```bash
@@ -31,3 +45,4 @@ go run . <command> [args...]
 * `reset`: deletes all data from the database
 * `users`: lists all users
 * `agg`: fetches an example RSS feed
+* `addfeed <name> <url>`: adds an RSS feed associated to the current user
