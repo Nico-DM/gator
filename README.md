@@ -46,3 +46,4 @@ go run . <command> [args...]
 * `users`: lists all users
 * `agg`: fetches an example RSS feed
 * `addfeed <name> <url>`: adds an RSS feed associated to the current user
+* `feeds`: lists all RSS feeds
