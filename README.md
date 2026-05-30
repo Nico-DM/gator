@@ -26,6 +26,12 @@ cd sql/schema && goose postgres "postgres://nico:@localhost:5432/gator" up && cd
 cd sql/schema && goose postgres "postgres://nico:@localhost:5432/gator" down && cd ../..
 ```
 
+## Generate Go functions from SQL queries
+
+```bash
+sqlc generate
+```
+
 ## Connect to database
 
 ```bash
